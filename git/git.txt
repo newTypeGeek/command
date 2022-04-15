@@ -2,3 +2,9 @@
 # if remote branches are deleted
 git pull --prune
 
+
+# revert all local uncommited changes
+git checkout .
+
+# revert all local uncommited changes of a particular <filename>
+git checkout -- <filename>
