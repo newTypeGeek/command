@@ -1,0 +1,4 @@
+# git pull remote branches and also delete local branches 
+# if remote branches are deleted
+git pull --prune
+
