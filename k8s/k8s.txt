@@ -1,0 +1,18 @@
+# list out all <object> within the <namespace>
+# <object> can be 
+# 1. node
+# 2. svc
+# 3. pod
+# 4. job
+# 5. cronjob
+kubectl get <object> -n <namespace>
+
+# --output=wide list out more info about the <object>
+# e.g. the version
+kubectl get <object> -n <namespace> --output=wide
+
+# display logging in stream (-f flag)
+kubectl logs -f <pod-name> -n <namespace>
+
+# dump logging to <filename>
+kubectl logs <pod-name> -n <namespace> > <filename>
