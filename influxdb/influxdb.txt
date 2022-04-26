@@ -1,0 +1,2 @@
+# get all fields in influxdb
+SHOW FIELD KEYS ON "<database_name>" FROM "<measurement_name>"
