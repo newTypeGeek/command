@@ -1,0 +1,22 @@
+# update all local charts
+helm repo update
+
+# read all helm charts
+helm search repo
+
+# read helm charts matches <name>
+helm search repo <name>
+
+# push chart to Chart Museum
+helm cm-push <chart-name> <chart-museum>
+
+# deployment using local Chart
+helm install -f <values-template>.yaml <object-name> ./ -n <namespace>
+helm upgrade -f <values-template>.yaml <object-name> ./ -n <namespace>
+
+# deployment using Chart Musem
+helm install -f <values-template>.yaml <object-name> <chart-museum> -n <namespace>
+helm upgrade -f <values-template>.yaml <object-name> <chart-museum> -n <namespace>
+
+# uninstall
+helm uninstall <object-name> -n <namespace>
